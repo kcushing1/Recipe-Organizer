@@ -1,25 +1,25 @@
 {
-  "name": "Recipe-Organizer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kcushing1/Recipe-Organizer.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kcushing1/Recipe-Organizer/issues"
-  },
-  "homepage": "https://github.com/kcushing1/Recipe-Organizer#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "sequelize": "^6.3.5"
-  }
+    "name": "recipe-organizer",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kcushing1/Recipe-Organizer.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/kcushing1/Recipe-Organizer/issues"
+    },
+    "homepage": "https://github.com/kcushing1/Recipe-Organizer#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "sequelize": "^6.3.5"
+    }
 }
