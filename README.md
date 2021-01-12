@@ -7,7 +7,9 @@
 <img src='https://img.shields.io/github/last-commit/kcushing1/Recipe-Organizer'>
 </div>
 
-### All the recipes you've been dying to try - All of your favorites - All in one convenient place.
+### All the recipes you've been dying to try
+### All of your favorites
+### All in one convenient place.
 <br>
 
 ## Table of Contents  
@@ -74,12 +76,27 @@ This project is [MIT](https://github.com/kcushing1/Recipe-Organizer/blob/main/LI
 
 ---
 
-<div align="center" style="display:flex; align-items:center">
-
-## Kasey Cushing &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/kcushing1) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/kasey-cushing-053bbab1)
-## Michael Hernandez &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/MH4454) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/michael-hernandez-303a8ba3)
-## Seth Kalback &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/skalback) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/seth-kalback-a067b091)
-## Joel Dore &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/JoelDore) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/joeldore)
-## Jacob Krueger &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/GeminiTrinity) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/jacobmkrueger)
+<div align="center" style="display:flex; width:100%; flex-direction:row; justify-content:center; align-items:center">
+    
+<div style="margin-right:1rem">
+<h3>Kasey Cushing</h3>
+<a href="https://www.github.com/kcushing1"><img src="./public/images/github.svg"/></a> <a href="https://www.linkedin.com/in/kasey-cushing-053bbab1"><img src="./public/images/linkedin.svg"/></a>
+</div>
+<div style="margin-right:1rem">
+<h3>Michael Hernandez</h3>
+<a href="https://www.github.com/MH4454"><img src="./public/images/github.svg"/></a> <a href="https://www.linkedin.com/in/michael-hernandez-303a8ba3"><img src="./public/images/linkedin.svg"/></a>
+</div>
+<div style="margin-right:1rem">
+<h3>Seth Kalback</h3>
+<a href="https://www.github.com/skalback"><img src="./public/images/github.svg"/></a> <a href="https://www.linkedin.com/in/seth-kalback-a067b091"><img src="./public/images/linkedin.svg"/></a>
+</div>
+<div style="margin-right:1rem">
+<h3>Jacob Krueger</h3>
+<a href="https://www.github.com/GeminiTrinity"><img src="./public/images/github.svg"/></a> <a href="https://www.linkedin.com/in/jacobmkrueger"><img src="./public/images/linkedin.svg"/></a>
+</div>
+<div style="margin-right:1rem">
+<h3>Joel Dore</h3>
+<a href="https://www.github.com/joeldore"><img src="./public/images/github.svg"/></a> <a href="https://www.linkedin.com/in/joeldore"><img src="./public/images/linkedin.svg"/></a>
+</div>
 
 </div>
