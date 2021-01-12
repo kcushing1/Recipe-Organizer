@@ -76,19 +76,8 @@ This project is [MIT](https://github.com/kcushing1/Recipe-Organizer/blob/main/LI
 
 ---
 
-<div align="center" style="display:flex">
-
-## Kasey Cushing &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/kcushing1) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/kasey-cushing-053bbab1)
-## Michael Hernandez &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/MH4454) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/michael-hernandez-303a8ba3)
-## Seth Kalback &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/skalback) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/seth-kalback-a067b091)
-## Joel Dore &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/JoelDore) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/joeldore)
-## Jacob Krueger &nbsp;&nbsp; <br> [![github](./public/images/github.svg)](https://www.github.com/GeminiTrinity) [![linkedin](./public/images/linkedin.svg)](https://www.linkedin.com/in/jacobmkrueger)
-
-</div>
-
-
 <div align="center" style="display:flex; width:100%; flex-direction:row; justify-content:center; align-items:center">
-
+    
 <div style="margin-right:1rem">
 <h3>Kasey Cushing</h3>
 <a href="https://www.github.com/kcushing1"><img src="./public/images/github.svg"/></a> <a href="https://www.linkedin.com/in/kasey-cushing-053bbab1"><img src="./public/images/linkedin.svg"/></a>
