@@ -1,7 +1,6 @@
-/* body {
-    width: 100%;
-    max-width: fit-content;
-} */
+body {
+    font-family: 'Playfair Display', serif;
+}
 
 .container {
     background-color: #eeecff;
@@ -49,6 +48,10 @@
     box-shadow: 4px 4px 5px #383838;
 }
 
+.opening-text {
+    padding: 100px;
+}
+
 ul {
     list-style-type: none;
     font-weight: bold;
@@ -71,6 +74,9 @@ a:hover {
     color: silver;
 }
 
-#dish-page {
+#dish-page, #home-page {
     line-height: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
