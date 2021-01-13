@@ -1,6 +1,9 @@
 const apiRoutes = require("./routes/apiRoutes");
 const express = require("express");
-const Sequelize = require("sequelize");
+const session  = require ("express-session");
+const Sequelize = require('sequelize');
+const passport = require("./config/passport");
+
 const db = require("./models");
 
 // Initialize application on port 8080
@@ -10,10 +13,13 @@ const PORT = process.env.PORT || 8080;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-//app.use("/api", apiRoutes);
-//app.use("/", htmlRoutes);
+
 require("./routes/apiCategory")(app);
 require("./routes/apiSource")(app);
+
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
 // Start server
 db.sequelize.sync({ force: true }).then(function () {
