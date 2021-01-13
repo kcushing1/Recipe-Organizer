@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "omg0hGosh!",
+    "password": null,
     "database": "recipeEZ_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
