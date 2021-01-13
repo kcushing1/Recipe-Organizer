@@ -16,5 +16,10 @@ module.exports = function (sequelize, Datatypes) {
             }
         }
     });
+    // Custom prototype method to check user password against database
+    User.prototype.validPassword = function (password) {
+        return password === this.password
+    };
+
     return User;
 };
