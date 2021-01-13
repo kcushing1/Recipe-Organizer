@@ -1,5 +1,6 @@
 body {
     font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
 }
 
 .container {
@@ -41,6 +42,8 @@ body {
     margin-right: 10px;
     border-radius: 12px;
     box-shadow: 4px 4px 5px #383838;
+    padding-left: 18px;
+    padding-top: 10px;
 }
 
 #sources {
@@ -52,14 +55,17 @@ body {
     padding: 100px;
 }
 
+/* https://www.w3schools.com/cssref/tryit.asp?filename=trycss_list-style-image */
 ul {
     list-style-type: none;
     font-weight: bold;
+    list-style-image: url("../images/list.png")
 }
 
 li {
-    line-height: 2.5;
-    font-size: 18px;
+    line-height: 2;
+    font-size: 20px;
+    letter-spacing: 6px;
 }
 
 a:link, a:visited {
