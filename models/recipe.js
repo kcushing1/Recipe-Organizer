@@ -16,10 +16,9 @@ module.exports = function (sequelize, DataTypes) {
     },
     rating: {
       type: DataTypes.INTEGER,
-      defaultValue: 5,
       validate: {
         min: 1,
-        max: 10,
+        max: 5,
       },
     },
     notes: DataTypes.STRING,
