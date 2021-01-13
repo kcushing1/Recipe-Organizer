@@ -14,6 +14,7 @@ app.use(express.static("public"));
 //app.use("/", htmlRoutes);
 require("./routes/apiCategory")(app);
 require("./routes/apiSource")(app);
+require("./routes/apiRecipe")(app);
 
 // Start server
 db.sequelize.sync({ force: true }).then(function () {
