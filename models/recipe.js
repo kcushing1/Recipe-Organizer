@@ -16,17 +16,13 @@ module.exports = function (sequelize, Datatypes) {
     },
     rating: {
       type: DataTypes.INTEGER,
-      allowNull: false,
       defaultValue: 5,
       validate: {
         min: 1,
         max: 10,
       },
     },
-    notes: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
+    notes: DataTypes.STRING,
     tested: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
