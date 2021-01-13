@@ -9,30 +9,31 @@ module.exports = function (app) {
   });
 
   //list all categories
-  app.get("/api/categories", (req,res) => {
-    db.Category.findAll({
-    }).then((findCategory) => {
-      res.json(findCategory)
-  })
+  app.get("/api/categories", (req, res) => {
+    db.Category.findAll({}).then((findCategory) => {
+      res.json(findCategory);
+    });
+  });
 
   //search within a chosen category
-  app.get("/api/categories/:id", (req,res) => {
+  app.get("/api/categories/:id", (req, res) => {
     db.Category.findOne({
       where: {
-        id: req.params.id
-      }
+        id: req.params.id,
+      },
     }).then((findCategory) => {
-      res.json(findCategory)
-  })
+      res.json(findCategory);
+    });
+  });
 
   //delete a category if it is no longer needed
-  app.delete("/api/categories/:id", (req,res) => {
+  app.delete("/api/categories/:id", (req, res) => {
     db.Category.destroy({
       where: {
-        id: req.params.id
-      }
+        id: req.params.id,
+      },
     }).then((deleteCategory) => {
-      res.json(deleteCategory)
-  })
-
+      res.json(deleteCategory);
+    });
+  });
 };
