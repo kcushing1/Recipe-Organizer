@@ -1,7 +1,7 @@
 {
-  "name": "Recipe-Organizer",
+  "name": "recipe-organizer",
   "version": "1.0.0",
-  "description": "",
+  "description": "A place to organize and keep track of recipes from various sources",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kcushing1/Recipe-Organizer/issues"
   },
