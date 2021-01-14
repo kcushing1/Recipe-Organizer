@@ -7,6 +7,13 @@ module.exports = function (sequelize, DataTypes) {
         len: [1],
       },
     },
+    category: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1],
+      },
+    },
     url_pg: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -31,14 +38,6 @@ module.exports = function (sequelize, DataTypes) {
 
   Recipe.associate = function (models) {
     Recipe.belongsTo(models.Source, {
-      foreignKey: {
-        allowNull: false,
-      },
-    });
-  };
-
-  Recipe.associate = function (models) {
-    Recipe.belongsTo(models.Category, {
       foreignKey: {
         allowNull: false,
       },
