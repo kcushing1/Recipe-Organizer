@@ -15,6 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 require("./routes/apiSource")(app);
+require("./routes/apiRecipe")(app);
 require("./routes/apiLoginSignup")(app);
 
 app.use(
