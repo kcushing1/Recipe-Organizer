@@ -1,7 +1,5 @@
-const apiRoutes = require("./routes/apiRoutes");
 const express = require("express");
 const session = require("express-session");
-const Sequelize = require("sequelize");
 const passport = require("./config/passport");
 
 const db = require("./models");
@@ -17,15 +15,13 @@ app.use(express.static("public"));
 require("./routes/apiSource")(app);
 require("./routes/apiLoginSignup")(app);
 
-app.use(
-  session({ secret: "keyboard cat", resave: true, saveUninitialized: true })
-);
+app.use(session({ secret: process.env.SECRET || "be nice to jake", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 
 // Start server
 db.sequelize.sync({ force: true }).then(function () {
-  app.listen(PORT, function () {
-    console.log("App listening on PORT " + PORT);
-  });
+    app.listen(PORT, function () {
+        console.log("App listening on PORT " + PORT);
+    });
 });
