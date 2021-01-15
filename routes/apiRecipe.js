@@ -22,14 +22,17 @@ module.exports = function (app) {
   //create a new recipe
   app.post("/api/recipes", (req, res) => {
     let resp = req.body;
+    console.log(resp);
     db.Recipe.create({
       title: resp.title,
+      category: resp.category,
       url_pg: resp.url_pg,
       rating: resp.rating,
       notes: resp.notes,
       tested: resp.tested,
-    }).then((newSource) => {
-      res.json(newSource);
+      SourceId: resp.SourceId,
+    }).then((newRecipe) => {
+      res.json(newRecipe);
     });
   });
 
