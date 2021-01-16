@@ -24,7 +24,7 @@ module.exports = function (app) {
         if (req.user) {
             res.redirect("/home")
         }
-        res.sendFile(path.join(__dirname, "../public/html/signup.html"));
+        res.sendFile(path.join(__dirname, "../public/html/sign-up.html"));
     })
 
     // These use isAuth. middleware to restrict pages to logged in users
