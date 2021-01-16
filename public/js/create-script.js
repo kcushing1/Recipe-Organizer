@@ -1,28 +1,39 @@
+// Scroll Spy
 $(document).ready(function () {
-  //onclick of sources dropdown, a list of sources is generated
-  $("#sources-list").on("click", function (e) {
-    e.preventDefault();
-    getSources();
+  $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        900,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
   });
 
-  //retrieve sources list
-  function getSources() {
-    //GET list of sources
-    $.ajax({
-      type: "GET",
-      url: "/api/sources",
-    }).then((resp) => {
-      console.log(resp);
+  // Slide Animation when Scrolling
+  $(window).scroll(function () {
+    $(".slideanim").each(function () {
+      var pos = $(this).offset().top;
 
-      //create sources array and return that array so user can select from list
-      function getSourcesArr(data) {
-        let sourceArr = [];
-        for (let i = 0; i < resp.length; i++) {
-          sourceArr.push(data[i].text);
-        }
-        return sourceArr;
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
       }
-      getSourcesArr(resp.body);
     });
-  }
+  });
+});
+
+// Toggle Sidebar
+let menuBtn = document.querySelector("#menu-btn");
+let sidebar = document.querySelector("#sidebar");
+let container = document.querySelector(".my-container");
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("active-nav");
+  container.classList.toggle("active-cont");
 });
