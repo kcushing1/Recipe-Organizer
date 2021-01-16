@@ -36,6 +36,22 @@ module.exports = function (app) {
     });
   });
 
+  //update a recipe
+  app.put("/api/recipes", (req, res) => {
+    let newInfo = {
+      notes: req.body.notes,
+      rating: req.body.rating,
+      tested: req.body.tested,
+    };
+    db.Recipe.update(newInfo, {
+      where: {
+        id: req.body.id,
+      },
+    }).then((recipe) => {
+      res.json(recipe);
+    });
+  });
+
   //delete a recipe
   app.delete("/api/recipes/:id", (req, res) => {
     db.Recipe.destroy({
