@@ -16,10 +16,10 @@ module.exports = function (app) {
   });
 
   //search within a chosen source
-  app.get("/api/sources/:id", (req, res) => {
+  app.get("/api/sources/:text", (req, res) => {
     db.Source.findOne({
       where: {
-        id: req.params.id,
+        text: req.params.text,
       },
     }).then((findSource) => {
       res.json(findSource);
