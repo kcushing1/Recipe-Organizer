@@ -1,11 +1,46 @@
 $(document).ready(function () {
-  //onclick of sources dropdown, a list of sources is generated
-  $("#sources-list").on("click", function (e) {
-    e.preventDefault();
-    getSources();
+  //onclick of submit, compile recipe as info and send post request
+  $("#create-new-recipe").on("click", (event) => {
+    event.preventDefault();
+    addNewRecipe();
   });
 
-  //retrieve sources list
+  function addNewRecipe() {
+    //define the new recipe
+    let newTitle = $("#new-title").val().trim();
+    let newCategory = $("#FoodCategoryCreate").val();
+    let newUrl = $("#new-url-pg").val();
+
+    //may need to parse int rating, depending on data type from input form
+    let newRating = $("#rate-recipe").val();
+
+    let newNotes = $("#recipe-notes").val();
+
+    //true/false value, tbd
+    let ifTested = true;
+
+    //retrieve the source id from the selected source
+    let chosenSource = $("#source-options").val();
+    let sourceId = findSourceId(chosenSource);
+
+    let newRecipe = {
+      tite: newTitle,
+      category: newCategory,
+      url_pg: newUrl,
+      rating: newRating,
+      notes: newNotes,
+      tested: ifTested,
+      SourceId: sourceId,
+    };
+
+    //POST the new recipe
+    $.post("/api/recipes", newRecipe, (data) => {
+      console.log(data);
+    });
+  }
+
+  //prepare the sources list to be available option
+  getSources();
   function getSources() {
     //GET list of sources
     $.ajax({
@@ -33,6 +68,17 @@ $(document).ready(function () {
         `);
         }
       }
+    });
+  }
+
+  //retrieve the id from the source that was selected
+  function findSourceId(source) {
+    let findTitle = $("#source-options").val();
+
+    //ajax request
+    $.get("/api/sources/:" + findTitle, (data) => {
+      console.log(data);
+      return data.id;
     });
   }
 });
