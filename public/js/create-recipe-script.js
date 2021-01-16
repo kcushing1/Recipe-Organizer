@@ -73,10 +73,10 @@ $(document).ready(function () {
 
   //retrieve the id from the source that was selected
   function findSourceId(source) {
-    let findTitle = $("#source-options").val();
+    let findByTitle = $("#source-options").val();
 
     //ajax request
-    $.get("/api/sources/:" + findTitle, (data) => {
+    $.get("/api/sources/:" + findByTitle, (data) => {
       console.log(data);
       return data.id;
     });
