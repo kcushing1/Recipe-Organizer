@@ -1,179 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Recip-EZ</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/recipe_create.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Recipe</title>
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/recipe_create.css">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span ></span>
-        <span ></span>
-        <span ></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">Recip-EZ</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#recipes">RECIPES</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<body>
+    <!-- SideBar -->
+    <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+        <a href="home.html" class="navbar-brand text-light mt-5">
+            <div class="display-5 font-weight-bold">Recip-EZ</div>
+        </a>
+        <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <li class="nav-item w-100">
+                <a href="home.html" class="nav-link text-light pl-4">Home</a>
+            </li>
+            <li class="nav-item dropdown w-100">
+                <a href="#" class="nav-link dropdown-toggle text-light pl-4" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Categories</a>
+                <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Breakfast Recipes</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Lunch Recipes</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Dinner Recipes</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Dessert Recipes</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Drink Recipes</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Diet & Healthy Recipes</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Vegetarian Recipes</a></li>
+                    <li><a href="#" class="dropdown-item text-light pl-4 p-2">Keto Recipes</a></li>
+                </ul>
+            </li>
+            <li class="nav-item w-100">
+                <a href="#" class="nav-link text-light pl-4">Create Recipe</a>
+            </li>
 
+        </ul>
+    </nav>
+    <!-- Title & Category -->
+    <section class="p-4 my-container">
+        <button class="btn my-4" id="menu-btn">Menu</button>
+        <div id="about" class="container-fluid">
+              <div class="col-sm">
+                <h2 class="text-center" >Create your own recipe for others to enjoy</h2>
+            </div>
+        </div>
+        <div class="container-fluid bg-grey">
+            <div class="row">
+              <div class="col-sm-8">
+                <h3>Title:</h3>
+                <p>Create the title for your recipe</p>
+                <input class="form-control" type="text" placeholder="Title of Recipe" required="required">
+                <br>
+                <br>
+                <h4>Category:</h4>
+                <label for="FoodCategoryCreate">Select your category</label>
+              <select class="form-control" id="FoodCategoryCreate" aria-label="Default select example">
+                <option selected>Categories:</option>
+                <option>Breakfast Recipes</option>
+                <option>Lunch Recipes</option>
+                <option>Dinner Recipes</option>
+                <option>Dessert Recipes</option>
+                <option>Drink Recipes</option>
+                <option>Diet & Healthy Recipes</option>
+                <option>Vegetarian</option>
+                <option>Keto</option>
+              </select>
+              </div>
+              <div class="col-sm-4">
+                <span><img class="fit" src="https://www.budgetbytes.com/wp-content/uploads/2013/07/Ingredient-List-No-Prices.jpg"></span>
+              </div>
+            </div>
+          </div>
 
-
-<!-- Container (Title & Category) -->
-<div id="about" class="container-fluid">
-  <div class="row blue">
-    <div class="col-sm-12">
-      <h2 class="text-center" >Create your own recipe for others to enjoy</h2><br>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-8">
-      <h3>Title:</h3>
-      <p>Create the title for your recipe</p>
-      <input class="form-control" type="text" placeholder="Title of Recipe">
-      <br>
-      <br>
-      <h4>Category:</h4>
-      <label for="FoodCategoryCreate">Select your category</label>
-    <select class="form-control" id="FoodCategoryCreate">
-      <option selected></option>
-      <option>Breakfast Recipes</option>
-      <option>Lunch Recipes</option>
-      <option>Dinner Recipes</option>
-      <option>Dessert Recipes</option>
-      <option>Drink Recipes</option>
-      <option>Diet & Healthy Recipes</option>
-      <option>Vegetarian</option>
-      <option>Keto</option>
-    </select>
-    </div>
-    <div class="col-sm-4 slideanim">
-      <span><img class="fit" src="https://www.budgetbytes.com/wp-content/uploads/2013/07/Ingredient-List-No-Prices.jpg"></span>
-    </div>
-  </div>
-</div>
-
-<!-- Container (URL Upload Section) -->
+          <!-- URL Upload Section -->
 <div id="services" class="container-fluid text-center">
-  <div class="row">
-    <div class="col-sm-4 slideanim">
-      <span><img class="fit" src="https://cdn3.vectorstock.com/i/thumb-large/61/12/recipe-cookbook-decorated-with-kitchen-tools-card-vector-25326112.jpg"></span>
+    <div class="row">
+      <div class="col-sm-4 slideanim">
+        <span><img class="fit" src="https://cdn3.vectorstock.com/i/thumb-large/61/12/recipe-cookbook-decorated-with-kitchen-tools-card-vector-25326112.jpg"></span>
+      </div>
+      <div class="col-sm-8 ">
+        <h3>Source:</h3>
+        <p>Insert a URL for the Recipe you Love</p>
+        <select class="form-control" id="URL" aria-label="Default select example" placeholder="Insert Source:" required="required">
+            <option selected></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        <br>
+        <br>
+        <input class="btn btn-primary top-marg" type="submit" value="Submit">
+      </div>
     </div>
-    <div class="col-sm-8 ">
-      <h3>Source:</h3>
-      <p>Insert a URL for the Recipe you Love</p>
-      <input class="form-control" type="text" placeholder="Insert Source:">
-      <br>
-      <br>
-      <input class="btn btn-primary" type="submit" value="Submit">
     </div>
   </div>
-  </div>
-</div>
 
-<!-- Container (Image Upload Section) -->
+      <!-- Image Upload Section -->
 <div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <h3>Image:</h3>
-      <p>Upload an image for your recipe</p>
-      <div class="input-group">
-        <div class="custom-file">
-          <input type="file" class="custom-file-input" id="inputGroupFile04">
-          <label class="custom-file-label" for="inputGroupFile04"></label>
-        </div>
-        <div class="input-group-append">
-          <button class="btn btn-outline-secondary" type="button">Button</button>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-8 slideanim">
-      <img src="https://drncvpyikhjv3.cloudfront.net/sites/131/2016/09/15095553/placeholder-image-250x250.jpg" alt="placeholder-img" class="rounded float-right fit img-fluid">
-    </div>
-  </div>  
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="pricing" class="container-fluid">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p><span ></span> New Hampshire, US</p>
-      <p><span ></span> +00 1515151515</p>
-      <p><span ></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Image:</h3>
+        <p>Upload an image for your recipe</p>
+        <div class="input-group">
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile04">
+            <label class="custom-file-label" for="inputGroupFile04"></label>
+          </div>
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Upload</button>
+          </div>
         </div>
       </div>
-      <br>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
+      <div class="col-sm-8 slideanim">
+        <img src="https://drncvpyikhjv3.cloudfront.net/sites/131/2016/09/15095553/placeholder-image-250x250.jpg" alt="placeholder-img" class="rounded float-left fit img-fluid">
       </div>
-    </div>
+    </div>  
   </div>
-</div>
-<footer class="container-fluid text-center bg-grey">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Made with lots of ❤️️ from <a href="https://github.com/kcushing1/Recipe-Organizer" title="Visit w3schools">Team HTTP 417</a></p>
-</footer>
+  <footer class="container-fluid text-center bg-grey">
+    <p>Made with lots of ❤️️ from <a href="https://github.com/kcushing1/Recipe-Organizer">Team HTTP 417</a></p>
+  </footer>
+ </section>
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-        window.location.hash = hash;
-      });
-    }
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
 
+    <!-- Jquery Code -->
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="../js/create-script.js">
+    </script>
 </body>
+
 </html>
