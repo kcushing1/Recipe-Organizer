@@ -1,10 +1,31 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body {
+    min-height: 100vh;
+    background-color: #fff;
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
   }
 
-.fit {
+  ::placeholder {
+    color: lightgray;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: lightgrey;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: lightgrey;
+  }
+
+  .fit {
       max-width: 100%;
       max-height: 100%;
   }
@@ -21,26 +42,14 @@ body {
     font-weight: 600;
     margin-bottom: 30px;
   } 
-  .jumbotron {
-    background-color: #f4511e;
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
+
   .container-fluid {
     padding: 60px 50px;
   }
   .bg-grey {
     background-color: #f6f6f6;
   }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
+
   .thumbnail {
     padding: 0 0 15px 0;
     border: none;
@@ -51,16 +60,7 @@ body {
     height: 100%;
     margin-bottom: 10px;
   }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
+
   .item h4 {
     font-size: 19px;
     line-height: 1.375em;
@@ -68,76 +68,68 @@ body {
     font-style: italic;
     margin: 70px 0;
   }
-  .item span {
+
+.item span {
     font-style: normal;
   }
-  .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
+
+.navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    margin-left: -300px;
+    background-color: #7952b3;
+    transition: 0.4s;
+}
+
+.nav-link {
+  font-size: 1.25em;
+}
+
+.dropdown-menu {
+  background-color: #7952b3;
+}
+
+.dropdown-item:active,
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background-color: #ffffff26;
+}
+
+.my-container {
+  transition: 0.4s;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+.active-cont {
+  margin-left: 250px;
+}
+
+#menu-btn {
+  background-color: #7952b3;
+  color: #fff;
+}
+
+#menu-btn:focus {
+  box-shadow: 0 0 0 0.25rem #7952b344;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+.top-marg {
+  margin-top: 20px;
+}
+
+.slideanim {visibility:hidden;}
+
+.slide {
     animation-name: slide;
     -webkit-animation-name: slide;
     animation-duration: 1s;
