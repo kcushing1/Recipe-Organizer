@@ -73,27 +73,38 @@
     font-style: normal;
   }
 
-.navbar {
+  #sidebar {
     width: 250px;
-    height: 100vh;
-    position: fixed;
-    margin-left: -300px;
-    background-color: #7952b3;
-    transition: 0.4s;
+    top: 0;
+    left: 0;
+    display: grid;
+    color: #fff;
+    transition: all 0.3s;
+    padding-top: 10px;
+    padding: 15px;
+    line-height: 2;
+    margin-left: 13px;
 }
 
-.nav-link {
-  font-size: 1.25em;
+li {
+    line-height: 2;
+    font-size: 20px;
+    letter-spacing: 6px;
+    font-weight: bold;
 }
 
-.dropdown-menu {
-  background-color: #7952b3;
+/* Help with custom list https://bit.ly/2Kgc0i1 */
+.listing {
+    font-size: 14px;
+    list-style-image: url("../images/list.png")
 }
 
-.dropdown-item:active,
-.dropdown-item:focus,
-.dropdown-item:hover {
-    background-color: #ffffff26;
+a:link, a:visited {
+    text-decoration: none;
+  }
+  
+a:hover {
+    text-decoration: underline;
 }
 
 .my-container {
