@@ -13,6 +13,7 @@ $(document).ready(function () {
       url: "/api/sources",
     }).then((resp) => {
       console.log(resp);
+      appendSourceOptions();
 
       //create sources array and return that array so user can select from list
       function getSourcesArr(data) {
@@ -22,7 +23,16 @@ $(document).ready(function () {
         }
         return sourceArr;
       }
-      getSourcesArr(resp.body);
+
+      //append array as options on page
+      function appendSourceOptions() {
+        let sourcesArr = getSourcesArr(resp.body);
+        for (let i = 0; i < sourcesArr; i++) {
+          $("#source-options").append(`
+          <option>${sourcesArr[i].text}</option>
+        `);
+        }
+      }
     });
   }
 });
