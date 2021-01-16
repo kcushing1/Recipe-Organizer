@@ -9,7 +9,7 @@ module.exports = function (app) {
   });
 
   //search for a specific recipe
-  app.get("/api/recipes", (req, res) => {
+  app.get("/api/recipes/:id", (req, res) => {
     db.Recipe.findOne({
       where: {
         id: req.params.id,
@@ -37,7 +37,7 @@ module.exports = function (app) {
   });
 
   //update a recipe
-  app.put("/api/recipes", (req, res) => {
+  app.put("/api/recipes/:id", (req, res) => {
     let newInfo = {
       notes: req.body.notes,
       rating: req.body.rating,
