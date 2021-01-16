@@ -19,10 +19,11 @@ $(document).ready(() => {
 
         // POST request for login
         $.post("/api/login", userData)
-            .then(user => {
+            .done(user => {
                 window.location.replace("/home");
+            }).fail(err => {
+                console.log(err)
             })
-            .catch(err => console.log(err))
 
         // Clear form
         usernameInput.val("");

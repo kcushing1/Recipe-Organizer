@@ -31,10 +31,12 @@ $(document).ready(function () {
 
         // POST request
         $.post("/api/signup", userData)
-            .then(() => {
+            .done(() => {
                 window.location.replace("/home");
             })
-            .catch(err => console.log(err))
+            .fail(err => {
+                console.log(err)
+            })
 
         // Clear form
         usernameInput.val("");
