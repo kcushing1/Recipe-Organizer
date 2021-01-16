@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-<title>Recip-EZ Register</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="../css/sign-up.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <title>Recip-EZ Register</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/sign-up.css">
 </head>
+
 <body>
-<div class="signup-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-		<h2>Sign Up</h2>
-		<p>Please fill in this form to create an account!</p>
-		<hr>
-        <div class="form-group">       	
-        </div>
-        <div class="form-group">
-        	<input type="text" class="form-control" name="uname" id="username" placeholder="Username" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="confirm_password" id="password-confirm" placeholder="Confirm Password" required="required">
-        </div>        
-		<div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg" id="signup-btn">Sign Up</button>
-        </div>
+  <div class="signup-form">
+    <form action="/api/signup" method="post" id="signup">
+      <h2>Sign Up</h2>
+      <p>Please fill in this form to create an account!</p>
+      <hr>
+      <div class="form-group">
+        <input type="text" class="form-control" name="uname" id="username" placeholder="Username"
+            required="required">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password"
+            required="required">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" name="confirm_password" id="password-confirm"
+            placeholder="Confirm Password" required="required">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-lg" id="signup-btn">Sign Up</button>
+      </div>
     </form>
 	<div class="hint-text">Already have an account? <a href="/login">Login here</a></div>
 </div>
@@ -38,5 +41,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!-- Custom JS -->
 <script src="../js/sign-up-script.js"></script>
+
 </body>
+
 </html>
