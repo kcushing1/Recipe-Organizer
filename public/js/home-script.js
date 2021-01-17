@@ -3,6 +3,7 @@ $(document).ready(function () {
   //first, do get request all
   //then loop over array and append
   //max number? first ten?
+  listNavRecipes();
   function listNavRecipes() {
     //GET request all recipes
     $.ajax({
