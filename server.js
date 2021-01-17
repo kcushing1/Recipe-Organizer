@@ -8,6 +8,10 @@ const db = require("./models");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+app.use(session({ secret: process.env.SECRET || "be nice to jake", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -16,10 +20,6 @@ require("./routes/htmlRoutes")(app);
 require("./routes/apiSource")(app);
 require("./routes/apiRecipe")(app);
 require("./routes/apiLoginSignup")(app);
-
-app.use(session({ secret: process.env.SECRET || "be nice to jake", resave: true, saveUninitialized: true }));
-app.use(passport.initialize());
-app.use(passport.session());
 
 // Start server
 db.sequelize.sync().then(function () {

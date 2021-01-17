@@ -22,7 +22,9 @@ $(document).ready(() => {
       .done((user) => {
         window.location.replace("/home");
       })
-      .fail((err) => console.log(err));
+      .fail((err) => {
+        console.log(err);
+      });
 
     // Clear form
     usernameInput.val("");

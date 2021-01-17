@@ -18,6 +18,10 @@ li {
     font-weight: bold;
 }
 
+#recipe-list {
+    visibility: hidden;
+}
+
 /* Help with custom list https://bit.ly/2Kgc0i1 */
 .listing {
     font-size: 14px;
