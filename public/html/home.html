@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recip-EZ Home</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../css/home.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+  </head>
+  <body>
     <!-- Start of NEW Nav-Bar -->
-<div class="container" id="instructional">
-    <div class="row">
+    <div class="container" id="instructional">
+      <div class="row">
         <div class="col-lg-2.5">
             <nav id="sidebar">
                 <div class="sidebar-header">
@@ -42,25 +55,38 @@
                             <li class="listing"><a href="#">Food52</a></li>
                         </ul>
                     </li>
+
                 </ul>
-            </nav>
+              </li>
+              <li>
+                <a
+                  href="#pageSubmenu"
+                  data-toggle="collapse"
+                  aria-expanded="false"
+                  class="dropdown-toggle"
+                  >Sources</a
+                >
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                  <li class="listing"><a href="#">The Joy of Cooking</a></li>
+                  <li class="listing">
+                    <a href="#">How to Cook Everything</a>
+                  </li>
+                  <li class="listing"><a href="#">Food52</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="col-lg-1">
-            <div class="recipe-list">
-                <nav id="sidebar">
-                    <ul class="list-unstyled components">
-                        <li class="listing"><a href="#">Recipe One</a></li>
-                        <li class="listing"><a href="#">Recipe Two</a></li>
-                        <li class="listing"><a href="#">Recipe Three</a></li>
-                        <li class="listing"><a href="#">Recipe Four</a></li>
-                        <li class="listing"><a href="#">Recipe Five</a></li>
-                        <li class="listing"><a href="#">Recipe Six</a></li>
-                        <li class="listing"><a href="#">Recipe Seven</a></li>
-                    </ul>
-                </nav>
-            </div>
+          <div class="recipe-list">
+            <nav id="sidebar">
+              <ul id="nav-recipe-list" class="list-unstyled components">
+                <li class="listing"><a href="#">Recipe One</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-<!-- End of Nav-Bar -->
+        <!-- End of Nav-Bar -->
 
         <div class="col-lg text-center">
             <br><br>
@@ -69,15 +95,29 @@
             <h1 id="intro">Thank you for joining <b>Recip-EZ</b>™, your handy online recipe organizer!</h1><br><br>
             <h2 id="info">To begin, click on the "Add New Recipe" button that has appeared on the side-bar to your left, this will take you to our EZ™ Recipe template. Fill in the neccessary information like the Title, where you got the recipe, give it a rating, and jot down some notes and PRESTO it's saved under your personal log in! To view previous saved recipes, either click on Categories or Sources, choose a dish, and you'll have all the recipe pop up; link and all!</h2>
         </div>
-        </div>
-    </div>
-</div>
 
-<script src="../js/nav-script.js"></script>
-<script src="../js/home-script.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-</body>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script src="../js/nav-script.js"></script>
+    <script src="../js/home-script.js"></script>
+  </body>
 </html>
