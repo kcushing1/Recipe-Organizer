@@ -9,7 +9,7 @@ module.exports = function (app) {
   });
 
   //search for a specific recipe
-  app.get("/api/recipes", (req, res) => {
+  app.get("/api/recipes/:id", (req, res) => {
     db.Recipe.findOne({
       where: {
         id: req.params.id,
