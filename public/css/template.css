@@ -23,16 +23,15 @@ body {
     margin-left: 13px;
 }
 
-.opening-text {
-    padding: 100px;
-}
-
-
 li {
     line-height: 2;
     font-size: 20px;
     letter-spacing: 6px;
     font-weight: bold;
+}
+
+.recipe-list {
+    visibility: hidden;
 }
 
 /* Help with custom list https://bit.ly/2Kgc0i1 */
@@ -53,9 +52,28 @@ a:hover {
     color: silver;
 }
 
+.fa-star, .checked {
+    width: 25px;
+}
+
 #dish-page {
     line-height: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#title, #rating-title, #rating, #image, #source, #notes {
+    padding: 20px;
+}
+
+#notes {
+    border-style: dashed;
+    border-color: #cb6ce6;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #cb6ce6;
 }

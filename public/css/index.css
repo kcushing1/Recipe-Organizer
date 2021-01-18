@@ -1,0 +1,31 @@
+body {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+}
+
+.container {
+    background-color: #eeecff;
+    width: 100%;
+    max-width: 100%;
+}
+
+.opening-text {
+    padding: 80px;
+}
+
+.log-in, .sign-up {
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #cb6ce6;
+}
+
+#home-page {
+    line-height: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
