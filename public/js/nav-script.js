@@ -11,10 +11,11 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
     });
 
-    toggleNavbar.addEventListener("click", function() {
-        recipeList.onclick="style.visibility='hidden';"
-      });
-    
+ 
+});
+
+$(recipeList).click(function(){
+    $(this).toggleClass(".recipe-list");
 });
 
 

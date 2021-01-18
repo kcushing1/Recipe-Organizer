@@ -9,9 +9,15 @@ body {
     max-width: 100%;
 }
 
+#intro {
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
 #info {
-    padding: 80px;
-    line-height: 3;
+    padding: 15px;
+    line-height: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,6 +54,10 @@ li {
 .listing {
     font-size: 14px;
     list-style-image: url("../images/list.png")
+}
+
+a {
+    color: #cb6ce6;
 }
 
 a:link, a:visited {
