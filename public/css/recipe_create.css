@@ -12,12 +12,16 @@
     color: #818181;
   }
 
-  #new-recipe, #all {
+  #new-recipe, #all, #logout {
     background-color: white;
     border-radius: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+#logout {
+    margin-top: 60px;
 }
 
   ::placeholder {
