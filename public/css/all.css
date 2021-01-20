@@ -29,6 +29,14 @@ li {
     font-weight: bold;
 }
 
+#new-recipe, #all {
+    background-color: white;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 .recipe-list {
     visibility: hidden;
 }
