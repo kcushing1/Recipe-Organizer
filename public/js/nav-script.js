@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     function listNavRecipes(sourceId, category) {
         // Define query URL based on parameters
-        const queryURL = sourceId ? `api/sources/${sourceId}`
+        const queryURL = sourceId ? `api/recipes/source/${sourceId}`
             : `/api/recipes/category/${category}`
 
         // GET request for filtered recipes
