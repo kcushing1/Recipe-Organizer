@@ -29,12 +29,16 @@ li {
     font-weight: bold;
 }
 
-#new-recipe, #all {
+#new-recipe, #all, #logout {
     background-color: white;
     border-radius: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+}
+
+#logout {
+    margin-top: 60px;
 }
 
 .recipe-list {
@@ -45,6 +49,10 @@ li {
 .listing {
     font-size: 14px;
     list-style-image: url("../images/list.png")
+}
+
+a {
+    color: #cb6ce6;
 }
 
 a:link, a:visited {
