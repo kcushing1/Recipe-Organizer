@@ -17,49 +17,50 @@
  <!-- Start of Nav-Bar -->
  <div class="container" id="instructional">
     <div class="row">
-      <div class="col-lg-2">
-          <nav id="sidebar">
-              <div class="sidebar-header">
-                  <button type="button" id="new-recipe"><a href="/add"><span class="fa fa-plus-circle"></span> Add
-                          New Recipe</a></button>
-                  <button type="button" id="all"><a href="/all"><span class="fa fa-search"></span> View All
-                          Recipes</a></button>
-              </div>
-              <ul class="list-unstyled components">
-                  <li class="active">
-                      <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
-                          class="dropdown-toggle">Categories</a>
-                      <ul class="collapse list-unstyled" id="homeSubmenu">
-                          <li class="listing"><a href="#">Breakfast</a></li>
-                          <li class="listing"><a href="#">Lunch</a></li>
-                          <li class="listing"><a href="#">Dinner</a></li>
-                          <li class="listing"><a href="#">Dessert</a></li>
-                          <li class="listing"><a href="#">Diet & Healthy</a></li>
-                          <li class="listing"><a href="#">Vegetarian</a></li>
-                          <li class="listing"><a href="#">Keto</a></li>
-                      </ul>
-                  </li>
-                  <li>
-                      <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
-                          class="dropdown-toggle">Sources</a>
-                      <ul class="collapse list-unstyled" id="pageSubmenu">
-                      </ul>
-                  </li>
-              </ul>
-              <button type="button" id="logout"><a href="/logout"><span class="fa fa-sign-out"></span> Log Out</a></button>
-          </nav>
-      </div>
+        <div class="col-lg-2">
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <button type="button" id="new-recipe"><a href="/add"><span class="fa fa-plus-circle"></span> Add
+                            New Recipe</a></button>
+                    <button type="button" id="new-source" data-toggle="modal" data-target="#addSourceModal">
+                        <span class="fa fa-plus-circle"></span> Add New Source</button>
+                    <button type="button" id="all"><a href="/all"><span class="fa fa-search"></span> View All
+                            Recipes</a></button>
+                </div>
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Categories</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li class="listing"><a href="#">Breakfast</a></li>
+                            <li class="listing"><a href="#">Lunch</a></li>
+                            <li class="listing"><a href="#">Dinner</a></li>
+                            <li class="listing"><a href="#">Dessert</a></li>
+                            <li class="listing"><a href="#">Diet & Healthy</a></li>
+                            <li class="listing"><a href="#">Vegetarian</a></li>
+                            <li class="listing"><a href="#">Keto</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle">Sources</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                        </ul>
+                    </li>
+                </ul>
+                <button type="button" id="logout"><a href="/logout"><span class="fa fa-sign-out"></span> Log Out</a></button>
+            </nav>
+        </div>
       <!-- End of Nav-Bar -->
       <!-- Start of Hidden Nav-Bar -->
       <div class="col-lg-2">
         <div class="recipe-list">
-          <nav id="sidebar">
-            <ul id="nav-recipe-list" class="list-unstyled components">
-              <li class="listing"><a href="#">Recipe One</a></li>
-            </ul>
-          </nav>
+            <nav id="sidebar">
+                <ul class="list-unstyled components nav-recipe-list">
+                </ul>
+            </nav>
         </div>
-      </div>
+    </div>
       <!-- End of Hidden Nav-Bar -->
 
     <div class="col-lg-8 align-center" id="dish-page">
