@@ -19,11 +19,22 @@ module.exports = function (app) {
     });
   });
 
-  // search for a specific recipe by category
+  // search for recipes by category
   app.get("/api/recipes/category/:category", (req, res) => {
     db.Recipe.findAll({
       where: {
         category: req.params.category,
+      },
+    }).then((findSource) => {
+      res.json(findSource);
+    });
+  });
+
+  // search for recipes by source
+  app.get("/api/recipes/source/:sourceId", (req, res) => {
+    db.Recipe.findAll({
+      where: {
+        sourceId: req.params.sourceId,
       },
     }).then((findSource) => {
       res.json(findSource);

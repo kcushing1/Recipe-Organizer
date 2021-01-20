@@ -19,7 +19,7 @@ module.exports = function (app) {
 
   //search within a chosen source
   app.get("/api/sources/:id", (req, res) => {
-    db.Source.findAll({
+    db.Source.findOne({
       where: {
         id: req.params.id,
       },
