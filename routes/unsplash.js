@@ -1,8 +1,6 @@
-
-
     function retrievePhoto () {
         //const query = recipe.title; // from above
-        let query = document.getElementById("search").value;
+        let query = document.getElementById("title").value;
         //const imageWidth = 300;
         //const imageHeight = 200;
         const orientation = "landscape"; //landscape, squarish or portrait
