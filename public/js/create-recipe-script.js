@@ -16,9 +16,6 @@ $(document).ready(function () {
 
     let newNotes = $("#recipe-notes").val();
 
-    //true/false value, tbd
-    let ifTested = true;
-
     //retrieve the source id from the selected source
     let chosenSource = $("#source-options").val();
     let sourceId = findSourceId(chosenSource);
@@ -29,7 +26,6 @@ $(document).ready(function () {
       url_pg: newUrl,
       rating: newRating,
       notes: newNotes,
-      tested: ifTested,
       SourceId: sourceId,
     };
 

@@ -29,7 +29,6 @@ module.exports = function (app) {
       url_pg: resp.url_pg,
       rating: resp.rating,
       notes: resp.notes,
-      tested: resp.tested,
       SourceId: resp.SourceId,
     }).then((newRecipe) => {
       res.json(newRecipe);
