@@ -1,3 +1,14 @@
+body {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+}
+
+.container {
+    background-color: #eeecff;
+    width: 100%;
+    max-width: 100%;
+}
+
 #sidebar {
     width: 250px;
     top: 0;
