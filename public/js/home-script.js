@@ -16,7 +16,7 @@ $(document).ready(function () {
       for (let i = 0; i < list.length; i++) {
         $(".nav-recipe-list").append(`
         <li class="listing">
-          <a href="/api/recipes/${ilist[i].id}">
+          <a href="/api/recipes/${list[i].id}">
             <h3>${list[i].title}</h3>
             <p>${list[i].category}</p>
           </a>
