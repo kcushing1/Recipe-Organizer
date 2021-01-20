@@ -23,6 +23,14 @@ body {
     margin-left: 13px;
 }
 
+#new-recipe, #all {
+    background-color: white;
+    border-radius: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 li {
     line-height: 2;
     font-size: 20px;
