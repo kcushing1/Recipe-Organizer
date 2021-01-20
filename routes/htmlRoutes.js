@@ -38,6 +38,11 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/html/dish-template.html"));
   });
 
+  // View all recipes
+  app.get("/all", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/html/all.html"));
+  });
+
   // Add recipe page
   app.get("/add", isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, "../public/html/recipe_create.html"));
