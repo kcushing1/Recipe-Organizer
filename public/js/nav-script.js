@@ -1,6 +1,3 @@
-var toggleNavbar = document.getElementById(".listing")
-var recipeList = document.getElementById(".recipe-list")
-
 $(document).ready(function () {
 
     $("#sidebar").mCustomScrollbar({
@@ -11,11 +8,8 @@ $(document).ready(function () {
         $('#sidebar').toggleClass('active');
     });
 
+    $(".listing").click(function(){
+        $(".recipe-list").css("visibility", "visible");
+    });
  
 });
-
-$(recipeList).click(function(){
-    $(this).toggleClass(".recipe-list");
-});
-
-
