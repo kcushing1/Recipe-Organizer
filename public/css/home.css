@@ -16,7 +16,7 @@ body {
 }
 
 
-#new-recipe, #all {
+#new-recipe, #new-source, #all {
     background-color: white;
     border-radius: 16px;
     margin-top: 10px;
@@ -65,7 +65,7 @@ li {
     list-style-image: url("../images/list.png")
 }
 
-a {
+button, a {
     color: #cb6ce6;
 }
 
