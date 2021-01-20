@@ -10,16 +10,6 @@ module.exports = function (app) {
     });
   });
 
-  app.get("/api/recipes/:id", (req, res) => {
-    db.Recipe.findOne({
-      where: {
-        id: req.params.id,
-      },
-    }).then((findRecipe) => {
-      res.json(findRecipe);
-    });
-  });
-
   //list all sources
   app.get("/api/sources", (req, res) => {
     db.Source.findAll({}).then((findSource) => {
