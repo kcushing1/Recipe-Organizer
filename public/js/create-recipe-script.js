@@ -15,7 +15,7 @@ $(document).ready(function () {
     let sourceId = $("#number-source-id").val().trim();
 
     let newRecipe = {
-      tite: newTitle,
+      title: newTitle,
       category: newCategory,
       url_pg: newUrl,
       rating: newRating,
@@ -29,7 +29,7 @@ $(document).ready(function () {
     });
   }
 
-  //prepare the sources list to be available option
+  //display the sources to the page
   getSources();
   function getSources() {
     //GET list of sources
