@@ -51,8 +51,8 @@ $(document).ready(function () {
             // Loop over recipes array and append each item to list
             for (let i = 0; i < recipes.length; i++) {
                 $(".nav-recipe-list").append(`
-                    <li class="listing" id="${recipes[i].id}">
-                        <a href="#">
+                    <li class="listing">
+                        <a href="/recipes/${recipes[i].id}">
                             <h3>${recipes[i].title}</h3>
                             <p>${recipes[i].category}</p>
                         </a>
