@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kcushing1/Recipe-Organizer.git"
+    "url": "git+https://github.com/joeldore/Recipe-Organizer.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kcushing1/Recipe-Organizer/issues"
+    "url": "https://github.com/joeldore/Recipe-Organizer/issues"
   },
-  "homepage": "https://github.com/kcushing1/Recipe-Organizer#readme",
+  "homepage": "https://github.com/joeldore/Recipe-Organizer#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-session": "^1.17.1",

@@ -43,7 +43,7 @@ function loadDishTemplate() {
   function retrievePhoto(searchTerm) {
     const query = searchTerm.replace(" ", "+");
     const orientation = "landscape"; //landscape, squarish or portrait
-    const accessKey = "EIT2adCdgloFexAkgFXyPWawzje8PHXZogwG4Q7Mffg";
+    const accessKey = process.env.UNSPLASH_ACCESS_KEY;
     let queryUrl =
       "https://api.unsplash.com/search/photos/?per_page=1&content_filter=high";
     queryUrl += `&orientation=${orientation}`;
