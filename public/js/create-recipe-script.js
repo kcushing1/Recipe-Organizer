@@ -40,7 +40,6 @@ $(document).ready(function () {
       for (let i = 0; i < resp.length; i++) {
         $("#insert-sources-list").append(`
       <p>${resp[i].id} ) ${resp[i].text}</p>
-      <br>
       `);
       }
     });
