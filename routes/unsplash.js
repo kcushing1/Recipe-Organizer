@@ -13,7 +13,7 @@
                 //console.log (data);
                 return data.json();
             })
-            .then(function(data) {
+            .then(function(data)
                 console.log ("*** data: ****"+data);
 
                 data.results.forEach(photo => {
