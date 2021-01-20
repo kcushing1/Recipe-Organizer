@@ -10,23 +10,17 @@ $(document).ready(function () {
     let newTitle = $("#new-title").val().trim();
     let newCategory = $("#FoodCategoryCreate").val();
     let newUrl = $("#new-url-pg").val();
-
-    //may need to parse int rating, depending on data type from input form
-    let newRating = $("#rate-recipe").val();
-
+    let newRating = $("#rate-recipe").val().trim();
     let newNotes = $("#recipe-notes").val();
-
-    //retrieve the source id from the selected source
-    let chosenSource = $("#source-options").val();
-    let sourceId = findSourceId(chosenSource);
+    let sourceId = $("#number-source-id").val().trim();
 
     let newRecipe = {
-      tite: newTitle,
+      title: newTitle,
       category: newCategory,
       url_pg: newUrl,
       rating: newRating,
       notes: newNotes,
-      SourceId: sourceId,
+      SourceId: parseInt(sourceId),
     };
 
     //POST the new recipe
@@ -35,7 +29,7 @@ $(document).ready(function () {
     });
   }
 
-  //prepare the sources list to be available option
+  //display the sources to the page
   getSources();
   function getSources() {
     //GET list of sources
@@ -43,35 +37,12 @@ $(document).ready(function () {
       type: "GET",
       url: "/api/sources",
     }).then((resp) => {
-      console.log(resp);
-      appendSourceOptions();
-
-      //create sources array and return that array so user can select from list
-      function getSourcesArr(data) {
-        let sourceArr = [];
-        for (let i = 0; i < resp.length; i++) {
-          sourceArr.push(data[i].text);
-        }
-        return sourceArr;
+      for (let i = 0; i < resp.length; i++) {
+        $("#insert-sources-list").append(`
+      <p>${resp[i].id} ) ${resp[i].text}</p>
+      <br>
+      `);
       }
-
-      //append array as options on page
-      function appendSourceOptions() {
-        let sourcesArr = getSourcesArr(resp.body);
-        for (let i = 0; i < sourcesArr; i++) {
-          $("#source-options").append(`
-          <option>${sourcesArr[i].text}</option>
-        `);
-        }
-      }
-    });
-  }
-
-  //retrieve the id from the source that was selected
-  function findSourceId(source) {
-    $.get("/api/sources/:" + source, (data) => {
-      console.log(data);
-      return data.id;
     });
   }
 });

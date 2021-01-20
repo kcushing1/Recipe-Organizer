@@ -6,7 +6,6 @@ $(document).ready(function () {
     listNavRecipes();
     populateSources()
 
-
     function populateSources() {
         // GET request for all sources
         $.ajax({
