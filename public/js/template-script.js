@@ -21,7 +21,7 @@ function loadDishTemplate() {
       }).then((src) => {
         document.querySelector(
           "#show-source-title"
-        ).innerText = `<strong>Source: </strong>${src[0].text}`;
+        ).innerHTML = `<strong>Source: ${src[0].text}</strong>`;
       });
 
       document.querySelector("#recipe-title").innerText = dish.title;
