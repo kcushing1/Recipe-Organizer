@@ -29,11 +29,6 @@ module.exports = function (sequelize, DataTypes) {
       },
     },
     notes: DataTypes.STRING,
-    tested: {
-      type: DataTypes.BOOLEAN,
-      allowNull: false,
-      defaultValue: true,
-    },
   });
 
   Recipe.associate = function (models) {
