@@ -17,9 +17,9 @@ module.exports = function (app) {
 
   //search within a chosen source
   app.get("/api/sources/:id", (req, res) => {
-    db.Source.findOne({
+    db.Recipe.findAll({
       where: {
-        id: req.params.id,
+        sourceId: req.params.id,
       },
     }).then((findSource) => {
       res.json(findSource);

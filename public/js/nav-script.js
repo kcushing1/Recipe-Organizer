@@ -1,15 +1,19 @@
 $(document).ready(function () {
 
     $("#sidebar").mCustomScrollbar({
-         theme: "minimal"
+        theme: "minimal"
     });
 
     $('#sidebarCollapse').on('click', function () {
         $('#sidebar').toggleClass('active');
     });
 
-    $(".listing").click(function(){
+    // Show 2nd sidebar
+
+    $(".listing").click(function () {
         $(".recipe-list").css("visibility", "visible");
     });
- 
+
+    // Update sidebar
+
 });
