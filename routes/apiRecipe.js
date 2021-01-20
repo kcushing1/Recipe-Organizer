@@ -8,7 +8,7 @@ module.exports = function (app) {
     });
   });
 
-  //search for a specific recipe
+  // search for a specific recipe by id
   app.get("/api/recipes/:id", (req, res) => {
     db.Recipe.findOne({
       where: {
@@ -16,6 +16,17 @@ module.exports = function (app) {
       },
     }).then((findRecipe) => {
       res.json(findRecipe);
+    });
+  });
+
+  // search for a specific recipe by category
+  app.get("/api/recipes/category/:category", (req, res) => {
+    db.Recipe.findAll({
+      where: {
+        category: req.params.category,
+      },
+    }).then((findSource) => {
+      res.json(findSource);
     });
   });
 
