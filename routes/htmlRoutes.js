@@ -1,5 +1,6 @@
 const path = require("path");
 const isAuthenticated = require("../config/middleware/isAuthenticated");
+const db = require("../models");
 
 module.exports = function (app) {
   // (logged out) landing page w/ links to login & signup
@@ -33,9 +34,16 @@ module.exports = function (app) {
     res.sendFile(path.join(__dirname, "../public/html/home.html"));
   });
 
-  // Viewing recipes (all, by category/source)
-  app.get("/recipes", isAuthenticated, (req, res) => {
-    res.sendFile(path.join(__dirname, "../public/html/dish-template.html"));
+  // View one recipe in full
+  app.get("/recipes/:id", isAuthenticated, (req, res) => {
+    db.Recipe.findOne({
+      where: {
+        id: req.params.id,
+      },
+    }).then((findRecipe) => {
+      //res.json(findRecipe);
+      res.sendFile(path.join(__dirname, "../public/html/dish-template.html"));
+    });
   });
 
   // View all recipes
