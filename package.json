@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kcushing1/Recipe-Organizer#readme",
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
