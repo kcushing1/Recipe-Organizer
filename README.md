@@ -17,6 +17,7 @@
 
 ## Table of Contents
 
+-
 - [Features](#Features)
 - [Installation](#Installation)
 - [Usage](#Usage)
@@ -44,7 +45,7 @@
 
 ## Usage
 
-<!-- Currently deployed with [Heroku](https://recipeez.herokuapp.com) -->
+Currently deployed with [Heroku](https://recipez417.herokuapp.com/home)
 
 1. Login with username & password, or sign up for a free account
 2. Click `Add Recipe` button to enter a new recipe reference
