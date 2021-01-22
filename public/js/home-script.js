@@ -11,8 +11,6 @@ $(document).ready(function () {
             type: "GET",
             url: "/api/recipes",
         }).then((list) => {
-            console.log(list);
-
             //loop over list array and append each item to the nested navbar
             for (let i = 0; i < list.length; i++) {
                 $(".nav-recipe-list").append(`
