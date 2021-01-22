@@ -22,12 +22,13 @@ body {
     margin-left: 13px;
 }
 
-#new-recipe, #all, #logout {
+#new-recipe, #all, #logout, #new-source {
     background-color: white;
     border-radius: 16px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #cb6ce6;
 }
 
 #logout {
