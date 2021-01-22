@@ -52,13 +52,15 @@ Currently deployed with [Heroku](https://recipez417.herokuapp.com/home)
 3. Fill out form with details/notes/rating and save to your collection
 4. Search your collection for a specific source or meal category
 
-<!-- ![Demo](./assets/images/demo.gif) -->
+   ![Desktop Screenshot](./public/images/screenshot-desktop.png)
+   <img src="./public/images/screenshot-mobile.png" alt="Mobile Screenshot" width="50%" />
 
 ## Technologies Used
 
 - [Express](https://expressjs.com/)
 - [Sequelize](https://sequelize.org/)
-- [Passport.js](http://www.passportjs.org/)
+- [Passport.js](https://www.passportjs.org/)
+- [Axios](https://www.npmjs.com/package/axios)
 - [Unsplash Image API](https://unsplash.com/developers)
 
 ## Contributing
@@ -72,16 +74,16 @@ Contributions welcome!
 
 ## Reflection
 
-- Implemented use of a double navigation bar
-- Integration between multiple HTML, CSS, script JS and API JS files
-- Learning to prioritize components so there is enough in the app to test functionality
+- Successfully implemented a double sidebar
+- Used MVC model to structure HTML/CSS/JS files, Sequelize models, and server-side API routes
+- Learned how to better prioritize components to produce an MVP more quickly
 
 ## Future Scope
 
+- Easily update/delete any recipe with `Edit`/`Delete` buttons in recipe view
 - Add option for user to upload custom images for their recipes
 - Update database to store recipe ingredients/instructions
-- Easily update or delete any recipe with `Edit`/`Delete` buttons in recipe view
-- Customizable categories
+- Allow customizable categories
 - Share recipes with other Recip-EZ users
 
 ## Questions
