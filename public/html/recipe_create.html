@@ -122,6 +122,33 @@
     </div>
   </div>
 
+  <!-- Modal for Add New Source -->
+  <div class="modal fade" id="addSourceModal" tabindex="-1" role="dialog" aria-labelledby="addSourceModalTitle"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="form">
+      <div class="modal-content">
+          <div class="modal-header pl-5">
+              <h4 class="modal-title" id="addSourceModalTitle"><strong> Add New Source</strong></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <br>
+          <form action="/api/sources" method="POST">
+              <div class="form-group px-5">
+                  <input type="text" class="form-control" name="text" id="sourceText"
+                      placeholder="My Cookbook, AllRecipes.com, etc...">
+              </div>
+              <div class="modal-footer">
+                  <button type="submit" class="btn btn-info">Add</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+
+
 
 
       <!-- Image Upload Section -->
