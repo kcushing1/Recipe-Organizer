@@ -19,6 +19,7 @@ app.use(express.static("public"));
 require("./routes/htmlRoutes")(app);
 require("./routes/apiSource")(app);
 require("./routes/apiRecipe")(app);
+require("./routes/apiUnsplash")(app);
 require("./routes/apiLoginSignup")(app);
 
 // Start server
