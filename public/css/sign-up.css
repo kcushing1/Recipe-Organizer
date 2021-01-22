@@ -2,6 +2,10 @@ body {
     background:  #eeecff;
     font-family: 'Playfair Display', serif;
 }
+
+a {
+    color: #cb6ce6;
+}
 .form-control{
     height: 41px;
     background: #f2f2f2;
@@ -58,14 +62,14 @@ body {
     outline: none;
 }
 .signup-form a{
-    color: #fff;
+    color: #cb6ce6;
     text-decoration: underline;
 }
 .signup-form a:hover{
     text-decoration: none;
 }
 .signup-form form a{
-    color: #3598dc;
+    color: #cb6ce6;
     text-decoration: none;
 }	
 .signup-form form a:hover{

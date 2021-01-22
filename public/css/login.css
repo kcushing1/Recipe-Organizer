@@ -3,6 +3,10 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+a {
+    color: #cb6ce6;
+}
+
 .login-form {
     width: 340px;
     margin: 50px auto;
