@@ -17,7 +17,6 @@
 
 ## Table of Contents
 
--
 - [Features](#Features)
 - [Installation](#Installation)
 - [Usage](#Usage)
