@@ -1,10 +1,10 @@
 # Recip-EZ
 
 <div>
-<img src='https://img.shields.io/github/license/kcushing1/Recipe-Organizer'>  
-<img src='https://img.shields.io/github/repo-size/kcushing1/Recipe-Organizer'>  
-<img src='https://img.shields.io/github/languages/top/kcushing1/Recipe-Organizer'>
-<img src='https://img.shields.io/github/last-commit/kcushing1/Recipe-Organizer'>
+<img src='https://img.shields.io/github/license/joeldore/Recipe-Organizer'>  
+<img src='https://img.shields.io/github/repo-size/joeldore/Recipe-Organizer'>  
+<img src='https://img.shields.io/github/languages/top/joeldore/Recipe-Organizer'>
+<img src='https://img.shields.io/github/last-commit/joeldore/Recipe-Organizer'>
 </div>
 
 ### All the recipes you've been dying to try
@@ -43,7 +43,6 @@
 4. Run `node server` in terminal and open `localhost:8080` (or your configured server port) in your browser
 
 ## Usage
-
 Currently deployed with [Heroku](https://recipez417.herokuapp.com/home)
 
 1. Login with username & password, or sign up for a free account
@@ -73,9 +72,9 @@ Contributions welcome!
 
 ## Reflection
 
-- Successfully implemented a double sidebar
-- Used MVC model to structure HTML/CSS/JS files, Sequelize models, and server-side API routes
-- Learned how to better prioritize components to produce an MVP more quickly
+- Used MVC model to structure public HTML/CSS/JS, Sequelize models, and server-side API routes
+- Deepened understanding/ability to prioritize tasks and produce MVP more quickly
+- Increased familiarity with agile workflow and resolving git conflicts
 
 ## Future Scope
 
@@ -85,13 +84,11 @@ Contributions welcome!
 - Allow customizable categories
 - Share recipes with other Recip-EZ users
 
-## Questions
-
-If you have any questions, feel free to create an [Issue](https://github.com/kcushing1/Recipe-Organizer/issues)
+## Questions  
+If you have any questions, feel free to create an [Issue](https://github.com/joeldore/Recipe-Organizer/issues)
 
 ## License
-
-This project is [MIT](https://github.com/kcushing1/Recipe-Organizer/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/joeldore/Recipe-Organizer/blob/main/LICENSE) licensed.  
 
 ---
 
